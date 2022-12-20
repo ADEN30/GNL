@@ -6,7 +6,7 @@
 /*   By: agallet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 13:25:32 by agallet           #+#    #+#             */
-/*   Updated: 2022/12/20 09:16:28 by agallet          ###   ########.fr       */
+/*   Updated: 2022/12/20 09:34:37 by agallet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ void	ft_line(int *verif, char **buffer, char **line, int *fd)
 {	
 	if (!*buffer)
 	{
-		ft_clear(&(*buffer));
 		ft_clear(&(*line));
 		*verif = -1;
 	}
