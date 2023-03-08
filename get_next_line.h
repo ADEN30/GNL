@@ -6,7 +6,7 @@
 /*   By: agallet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 14:57:32 by agallet           #+#    #+#             */
-/*   Updated: 2022/12/14 15:19:37 by agallet          ###   ########.fr       */
+/*   Updated: 2022/12/21 09:02:04 by agallet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define GET_NEXT_LINE_H
 
 # include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <fcntl.h>
 
@@ -29,5 +28,9 @@ char	*ft_clear(char **str);
 int		right_side(char *str);
 
 char	*ft_strdup(char *s1);
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
 
 #endif
